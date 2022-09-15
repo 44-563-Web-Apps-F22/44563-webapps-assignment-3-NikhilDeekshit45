@@ -76,5 +76,27 @@
                 <td>5hrs</td>
             </tr>
         </table>
+        <hr>
+        <!--snippet code-->
+        <a href="https://stackoverflow.com/questions/65380644/how-to-make-an-image-fit-into-a-simple-auto-playing-slideshow">simple auto-playing slideshow stack overflow</a>
+        
+        <p>How to write code in jQuery stackoverflow ?</p>
+        <pre>
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() { 
+              $('#slideshow > div:first')
+              .fadeOut(1000)
+              .next()
+              .fadeIn(1000)
+              .end()
+              .appendTo('#slideshow');
+            }, 3000);
+        </pre>
+
+    </body>
+    </html>    
+        
+
 
     
